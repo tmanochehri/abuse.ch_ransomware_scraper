@@ -63,7 +63,7 @@ if ($word -eq 0){
 $IPblocklist = Get-Content tempFeodoIP.txt
 
 # removes temp blocklist text file
-#Remove-Item tempFeodoIP.txt
+Remove-Item tempFeodoIP.txt
 
 $IPblocklist | ForEach-Object{
      if( $_ -match "^[^#]" -and $ItemMax -gt 0 ){
@@ -101,7 +101,7 @@ if ($word -eq 0){
 $URLblocklist = Get-Content tempFeodoURL.txt
 
 # removes temp blocklist text file
-#Remove-Item tempFeodoURL.txt
+Remove-Item tempFeodoURL.txt
 
 $URLblocklist | ForEach-Object{
      if( $_ -match "^[^#]" -and $ItemMax -gt 0 ){
@@ -138,7 +138,7 @@ if ($word -eq 0){
 $Domblocklist = Get-Content tempFeodoDom.txt
 
 # removes temp blocklist text file
-#Remove-Item tempFeodoURL.txt
+Remove-Item tempFeodoDom.txt
 
 $Domblocklist | ForEach-Object{
      if( $_ -match "^[^#]" -and $ItemMax -gt 0 ){
